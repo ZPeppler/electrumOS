@@ -5,7 +5,7 @@ set -xeuo pipefail
 mkdir -p /etc/skel/.bashrc.d/
 cp /ctx/files/etc/skel/bashrc.d/electrumOS /etc/skel/.bashrc.d/electrumOS
 cp -r /ctx/files/usr/share/applications/* /usr/share/applications/
-cp -r /ctx/files/usr/lib/systemd/system/* /usr/lib/systemd/system/
+#cp -r /ctx/files/usr/lib/systemd/system/* /usr/lib/systemd/system/
 
 systemctl enable bootloader-update.service
 systemctl mask bootc-fetch-apply-updates.timer
