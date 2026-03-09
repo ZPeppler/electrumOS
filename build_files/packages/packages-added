@@ -1,0 +1,16 @@
+####################################################
+# List of packages to install on top of base image
+####################################################
+
+# GROUPS
+@development-tools
+@headless-management
+@vlc
+@base-graphical
+@container-management
+@core
+@fonts
+@gnome-destkop
+@networkmanager-submodules
+@printing
+@workstation-product

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Neovide
+Comment=Neovim GUI
+Exec=neovide
+Icon=nvim
+Terminal=false
+Categories=Development;TextEditor;
+StartupNotify=true

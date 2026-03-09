@@ -1,0 +1,58 @@
+name: Build container -> niri-bootc
+on:
+  schedule:
+    - cron: "0 22 8-14 * 2" # Patch Tuesday
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "**/README.md"
+  workflow_dispatch:
+
+env:
+  IMAGE_DESC: "Custom Niri Fedora-Bootc Image"
+  IMAGE_KEYWORDS: "bootc,fedora,niri,dank-material-shell"
+  IMAGE_NAME: "${{ github.event.repository.name }}"
+  IMAGE_REGISTRY: "ghcr.io/${{ github.repository_owner }}"
+  DEFAULT_TAG: "latest"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}-${{ inputs.brand_name }}-${{ inputs.stream_name }}
+  cancel-in-progress: true
+
+jobs:
+  build_push:
+    name: Build and push image
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+
+    env:
+      LANG: en_US.UTF-8
+      LC_ALL: en_US.UTF8
+
+    steps:
+      - name: Prepare environment
+        run: |
+          # Lowercase the image uri
+          echo "IMAGE_REGISTRY=${IMAGE_REGISTRY,,}" >> ${GITHUB_ENV}
+          echo "IMAGE_NAME=${IMAGE_NAME,,}" >> ${GITHUB_ENV}
+
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+
+      - name: Build Image
+        id: build
+        run: sudo podman build -t "${IMAGE_NAME}:${DEFAULT_TAG}" -f ./Containerfile .
+
+      - name: Log in to GHCR
+        run: |
+          echo "${{ secrets.GHCR_PAT }}" | podman login ghcr.io -u "${{ github.repository_owner }}" --password-stdin
+
+      - name: push image to ghcr.io
+        run: |
+          sudo podman tag niri-bootc ghcr.io/zpeppler/niri-bootc:latest
+          sudo podman push ghcr.io/zpeppler/niri-bootc:latest
