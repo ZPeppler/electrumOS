@@ -10,7 +10,7 @@
 @container-management
 @core
 @fonts
-@gnome-destkop
+@gnome-desktop
 @networkmanager-submodules
 @printing
 @workstation-product
