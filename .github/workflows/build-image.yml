@@ -54,5 +54,5 @@ jobs:
 
       - name: push image to ghcr.io
         run: |
-          sudo podman tag electrumOS ghcr.io/zpeppler/electrumOS:latest
-          sudo podman push ghcr.io/zpeppler/electrumOS:latest
+          sudo podman tag electrumos ghcr.io/zpeppler/electrumos:latest
+          sudo podman push ghcr.io/zpeppler/electrumos:latest
