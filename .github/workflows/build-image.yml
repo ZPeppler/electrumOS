@@ -1,4 +1,4 @@
-name: Build container -> ${IMAGE_NAME}
+name: Build container -> electrumOS
 on:
   schedule:
     - cron: "0 22 8-14 * 2" # Patch Tuesday
@@ -54,5 +54,5 @@ jobs:
 
       - name: push image to ghcr.io
         run: |
-          sudo podman tag "${IMAGE_NAME}" "${IMAGE_REPOSITORY}/${IMAGE_NAME}:${DEFAULT_TAG}"
-          sudo podman push "${IMAGE_REPOSITORY}/${IMAGE_NAME}:${DEFAULT_TAG}"
+          sudo podman tag "${IMAGE_NAME}" "${IMAGE_REPOSITORY}"/"${IMAGE_NAME}":"${DEFAULT_TAG}"
+          sudo podman push "${IMAGE_REPOSITORY}"/"${IMAGE_NAME}":"${DEFAULT_TAG}"
