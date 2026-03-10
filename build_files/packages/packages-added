@@ -24,6 +24,12 @@ xdg-desktop-portal-wlr
 xorg-x11-server-Xwayland
 xdg-desktop-portal-termfilechooser
 
+# SWAY
+sway
+swayidle
+gtklock
+gtklock-powerbar-module
+
 code
 
 # DMS
