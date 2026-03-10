@@ -2,4 +2,16 @@
 # List of packages to remove on top of base image
 ####################################################
 
+# NIRI config
+waybar
+alacritty
 nano
+ranger
+foot
+sddm
+at
+iptables-services
+iptables-utils
+rsyslog
+dracut-config-rescue
+dnf-data

@@ -6,11 +6,139 @@
 @development-tools
 @headless-management
 @vlc
-@base-graphical
-@container-management
-@core
-@fonts
-@gnome-desktop
-@networkmanager-submodules
-@printing
-@workstation-product
+
+# NIRI 
+libwayland-server
+wayland-devel
+libseat
+xwayland-satellite
+dbus-daemon
+kitty
+niri
+polkit
+wl-clipboard
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-desktop-portal-gnome
+xdg-desktop-portal-wlr
+xorg-x11-server-Xwayland
+xdg-desktop-portal-termfilechooser
+
+code
+
+# DMS
+cava
+cliphist
+dgop
+dms
+dsearch
+quickshell
+wlsunset
+
+# GREETER
+dms-greeter
+greetd
+greetd-selinux
+
+# Original
+NetworkManager
+NetworkManager-wifi
+bash
+coreutils
+firewalld
+iproute
+iputils
+less
+man-db
+openssh-server
+sudo
+tmux
+util-linux
+
+# Gaming
+ibus
+ibus-libs
+ibus-gtk3
+ibus-gtk4
+ibus-wayland
+
+# Utilities
+ansible-core
+brightnessctl
+chezmoi
+flatpak
+gh
+git
+glibc-langpack-en
+kubectl
+lazygit
+lspci
+python3
+python3-pip
+qutebrowser
+tailscale
+toolbox
+tree
+unzip
+vim-default-editor
+wget
+zoxide
+
+# Cockpit
+cockpit-podman
+cockpit-files
+
+# Virtualization
+qemu-kvm
+libvirt
+virt-install
+virt-viewer
+virt-manager
+qemu-guest-agent
+
+# Troubleshooting
+lshw
+btop
+ncdu
+nmap
+bat
+
+# ZSH
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+starship
+
+# NVIM
+neovim
+fzf
+fd-find
+ripgrep
+npm
+nodejs
+cargo
+
+# NEOVIDE
+fontconfig-devel
+libstdc++-static
+libstdc++-devel
+
+# Drivers
+linux-firmware
+kernel-modules
+kernel-modules-extra
+iwlwifi-mvm-firmware
+alsa-sof-firmware
+
+# Yubikey
+yubikey-personalization-gui
+yubikey-manager-qt
+pam_yubico
+pam-u2f
+pamu2fcfg
+
+# YAZI
+yazi
+ImageMagick
+poppler
+ffmpeg

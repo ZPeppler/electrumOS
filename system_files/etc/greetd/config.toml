@@ -1,0 +1,9 @@
+[general]
+service = "greetd-spawn"
+
+[default_session]
+command = "dms-greeter --command niri"
+user = "greetd"
+
+[terminal]
+vt = 1 
