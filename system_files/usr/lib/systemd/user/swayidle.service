@@ -1,0 +1,11 @@
+[Unit]
+Description=Wayland idle manager (Swayidle)
+
+[Service]
+ExecStart=/usr/bin/swayidle -w \
+  timeout 300 'dms ipc call lock lock'
+
+Restart=always
+
+[Install]
+WantedBy=default.target
