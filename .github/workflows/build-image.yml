@@ -1,4 +1,4 @@
-name: Build container -> niri-bootc
+name: Build container -> electrumOS
 on:
   schedule:
     - cron: "0 22 8-14 * 2" # Patch Tuesday
@@ -54,5 +54,5 @@ jobs:
 
       - name: push image to ghcr.io
         run: |
-          sudo podman tag niri-bootc ghcr.io/zpeppler/niri-bootc:latest
-          sudo podman push ghcr.io/zpeppler/niri-bootc:latest
+          sudo podman tag electrumOS ghcr.io/zpeppler/electrumOS:latest
+          sudo podman push ghcr.io/zpeppler/electrumOS:latest
