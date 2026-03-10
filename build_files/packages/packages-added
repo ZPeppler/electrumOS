@@ -27,7 +27,7 @@ xdg-desktop-portal-termfilechooser
 # SWAY
 sway
 swayidle
-gtklock
+swaylock
 
 # VS Code
 code
