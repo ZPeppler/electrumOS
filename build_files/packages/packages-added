@@ -28,8 +28,8 @@ xdg-desktop-portal-termfilechooser
 sway
 swayidle
 gtklock
-gtklock-powerbar-module
 
+# VS Code
 code
 
 # DMS

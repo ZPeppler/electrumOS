@@ -1,6 +1,12 @@
+# Known repos coming in 44
 errornointernet/quickshell
-dejan/lazygit
+wef/gtklock
+
+# Possible repo coming in 44
 avengemedia/dms
+
+# Keep
+dejan/lazygit
 lihaohong/yazi
 atim/starship
 mo-k12/personal
