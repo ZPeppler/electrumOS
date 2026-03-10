@@ -54,5 +54,5 @@ jobs:
 
       - name: push image to ghcr.io
         run: |
-          sudo podman tag "${IMAGE_NAME}" "${IMAGE_REPOSITORY}"/"${IMAGE_NAME}":"${DEFAULT_TAG}"
-          sudo podman push "${IMAGE_REPOSITORY}"/"${IMAGE_NAME}":"${DEFAULT_TAG}"
+          sudo podman tag "${IMAGE_NAME}" "${IMAGE_REGISTRY}"/"${IMAGE_NAME}":"${DEFAULT_TAG}"
+          sudo podman push "${IMAGE_REGISTRY}"/"${IMAGE_NAME}":"${DEFAULT_TAG}"
