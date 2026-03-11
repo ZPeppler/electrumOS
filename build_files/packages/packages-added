@@ -88,6 +88,8 @@ unzip
 vim-default-editor
 wget
 zoxide
+clamav
+direnv
 
 # Cockpit
 cockpit-podman
