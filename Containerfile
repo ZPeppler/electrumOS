@@ -5,7 +5,7 @@ COPY system_files /files
 
 FROM quay.io/fedora/fedora-bootc:43
 LABEL ostree.bootable=true
-LABEL org.opencontainers.image.source=https://github.com/zpeppler/niri-bootc
+LABEL org.opencontainers.image.source=https://github.com/zpeppler/electrumos
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/var \

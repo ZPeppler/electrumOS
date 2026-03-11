@@ -11,7 +11,6 @@ systemctl enable bootloader-update.service
 systemctl mask bootc-fetch-apply-updates.timer
 systemctl enable cockpit.socket
 systemctl enable greetd
-systemctl --global enable swayidle.service
 
 mkdir -p /etc/systemd/system/multi-user.target.wants/
 ln -s /usr/lib/systemd/system/xdg-desktop-portal.service /etc/systemd/system/multi-user.target.wants/xdg-desktop-portal.service

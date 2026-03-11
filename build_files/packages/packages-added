@@ -28,10 +28,6 @@ wlopm
 # SWAY
 sway
 
-# LOCKSCREEN
-#gtklock (Add if brought in 44)
-swayidle
-
 # VS Code
 code
 
