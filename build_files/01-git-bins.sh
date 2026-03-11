@@ -21,15 +21,16 @@ while read -r repo bin; do
 
   url=""
 
-#TEST
   for u in "${urls[@]}"; do
     if [[ $u =~ $arch && $u =~ $libc ]]; then
       url="$u"
       break
     elif [[ $u =~ $arch ]]; then
-      [[ -z $url ]] && url="$u"
+      url="$u"
+      break
     else
-      [[ -z $url ]] && url="$u"
+      url="$u"
+      break
     fi
   done
 
