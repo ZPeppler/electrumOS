@@ -26,7 +26,8 @@ while read -r repo bin; do
       url="$u"
       break
     elif [[ $u =~ $arch ]]; then
-      [[ -z $url ]] && url="$u"
+      url="$u"
+      break
     else
       [[ -z $url ]] && url="$u"
     fi
