@@ -1,0 +1,14 @@
+[Unit]
+Description=ClamAV container
+
+[Container]
+Image=docker.io/clamav/clamav
+ContainerName=clamav
+PublishPort=3310:3310
+Volume=clamav-db:/var/lib/clamav
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

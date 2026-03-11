@@ -3,7 +3,7 @@
 set -xeuo pipefail
 
 mkdir -p /etc/skel/.bashrc.d/
-cp /ctx/files/etc/skel/bashrc.d/electrumOS /etc/skel/.bashrc.d/electrumOS
+cp /ctx/files/etc/skel/* /etc/skel/*
 cp -r /ctx/files/usr/share/applications/* /usr/share/applications/
 cp -r /ctx/files/usr/lib/systemd/* /usr/lib/systemd/
 

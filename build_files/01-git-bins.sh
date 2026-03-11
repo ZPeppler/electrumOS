@@ -22,7 +22,7 @@ while read -r repo bin; do
   url=""
 
   for u in "${urls[@]}"; do
-    if [[ $u =~ $arch && $u =~ $libc ]]; then
+    if [[ $u = *"$arch"* && $u = *"$libc"* ]]; then
       url="$u"
       break
     elif [[ $u =~ $arch ]]; then
