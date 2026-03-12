@@ -19,7 +19,7 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 grep -vE '^#' /ctx/build/packages/copr-repos | xargs -n1 dnf -y copr enable
 
 # INSTALL PACKAGES
-grep -vE '^#' /ctx/build/packages/packages-added | xargs dnf -y install --allowerasing
+grep -vE '^#' /ctx/build/packages/packages-added | xargs dnf -y install
 
 # REMOVE PACKAGES
 grep -vE '^#' /ctx/build/packages/packages-removed | xargs dnf -y remove
