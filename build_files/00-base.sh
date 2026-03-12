@@ -2,11 +2,6 @@
 
 set -xeuo pipefail
 
-mkdir -p /var/roothome
-
-rm -rfv /opt
-ln -s /var/opt /opt
-
 # INSTALL REPOS
 dnf -y install dnf5-plugins
 dnf -y config-manager addrepo --from-repofile=https://pkgs.tailscale.com/stable/fedora/tailscale.repo

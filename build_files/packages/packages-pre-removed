@@ -1,0 +1,11 @@
+####################################################
+# List of packages to remove from bootc initial image
+####################################################
+
+nano
+at
+iptables-services
+iptables-utils
+rsyslog
+dracut-config-rescue
+dnf-data
