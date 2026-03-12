@@ -2,9 +2,8 @@
 
 set -xeuo pipefail
 
-cp -r /ctx/files/etc/skel/* /etc/skel/
-cp -r /ctx/files/usr/share/applications/* /usr/share/applications/
-cp -r /ctx/files/usr/lib/systemd/* /usr/lib/systemd/
+cp -r /ctx/files/etc/* /etc/
+cp -r /ctx/files/usr/* /usr/
 
 systemctl enable bootloader-update.service
 systemctl mask bootc-fetch-apply-updates.timer
