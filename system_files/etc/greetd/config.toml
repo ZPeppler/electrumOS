@@ -2,7 +2,7 @@
 service = "greetd-spawn"
 
 [default_session]
-command = "dms-greeter --command niri"
+command = "dms-greeter --command sway -C /etc/greetd/sway"
 user = "greetd"
 
 [terminal]
