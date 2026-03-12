@@ -10,7 +10,6 @@ LABEL org.opencontainers.image.source=https://github.com/zpeppler/electrumos
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/var \
     --mount=type=tmpfs,dst=/tmp \
-    --mount=type=tmpfs,dst=/boot \
     --mount=type=tmpfs,dst=/run \
     --mount=type=cache,dst=/var/cache/libdnf5/ \
     /ctx/build/00-base-pre.sh
@@ -18,7 +17,6 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/var \
     --mount=type=tmpfs,dst=/tmp \
-    --mount=type=tmpfs,dst=/boot \
     --mount=type=tmpfs,dst=/run \
     --mount=type=cache,dst=/var/cache/libdnf5/ \
     /ctx/build/00-base.sh
@@ -26,7 +24,6 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/var \
     --mount=type=tmpfs,dst=/tmp \
-    --mount=type=tmpfs,dst=/boot \
     --mount=type=tmpfs,dst=/run \
     --mount=type=cache,dst=/var/cache/libdnf5/ \
     /ctx/build/01-git-bins.sh
@@ -34,7 +31,6 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/var \
     --mount=type=tmpfs,dst=/tmp \
-    --mount=type=tmpfs,dst=/boot \
     --mount=type=tmpfs,dst=/run \
     --network=none \
     /ctx/build/02-setup.sh
