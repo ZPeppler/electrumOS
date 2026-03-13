@@ -2,7 +2,6 @@
 
 set -xeuo pipefail
 
-export SYSTEMD_OFFLINE=1
 
 # INSTALL REPOS
 dnf -y install dnf5-plugins
