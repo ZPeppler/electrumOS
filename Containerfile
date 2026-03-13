@@ -11,6 +11,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/var \
     --mount=type=tmpfs,dst=/tmp \
     --mount=type=tmpfs,dst=/run \
+    --mount=type=bind,from=ctx,source=/boot,target=/boot \
     --mount=type=cache,dst=/var/cache/libdnf5/ \
     /ctx/build/00-base-pre.sh
 
