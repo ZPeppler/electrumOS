@@ -23,6 +23,7 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-wlr
 xorg-x11-server-Xwayland
 xdg-desktop-portal-termfilechooser
+bibata-cursor-themes
 
 # SWAY
 sway
