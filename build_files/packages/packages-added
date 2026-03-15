@@ -26,7 +26,8 @@ xdg-desktop-portal-termfilechooser
 bibata-cursor-themes
 
 # SWAY
-sway
+# sway
+scroll
 
 # VS Code
 code
