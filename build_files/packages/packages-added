@@ -59,6 +59,7 @@ openssh-server
 sudo
 tmux
 util-linux
+tuned
 
 # Gaming
 ibus
@@ -137,6 +138,7 @@ kernel-modules
 kernel-modules-extra
 iwlwifi-mvm-firmware
 alsa-sof-firmware
+cups-pk-helper
 
 # Yubikey
 yubikey-personalization-gui
