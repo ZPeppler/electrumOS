@@ -59,7 +59,10 @@ openssh-server
 sudo
 tmux
 util-linux
+power-profiles-daemon
 tuned
+fprintd
+khal
 
 # Gaming
 ibus
