@@ -26,7 +26,6 @@ xdg-desktop-portal-termfilechooser
 bibata-cursor-themes
 
 # SWAY
-# sway
 scroll
 
 # VS Code
@@ -91,6 +90,7 @@ wget
 zoxide
 clamav
 direnv
+fastfetch
 
 # Cockpit
 cockpit-podman
