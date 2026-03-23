@@ -63,6 +63,8 @@ power-profiles-daemon
 tuned
 fprintd
 khal
+kf5-kimageformats
+i2c-tools
 
 # Gaming
 ibus
