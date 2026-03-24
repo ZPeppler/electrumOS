@@ -46,7 +46,7 @@ jobs:
 
       - name: Build Image
         id: build
-        run: sudo podman build -t "${IMAGE_NAME}:${DEFAULT_TAG}" -f ./Containerfile .
+        run: sudo podman build -t "${IMAGE_NAME}:${DEFAULT_TAG}" -f ./electrumOS.container .
 
       - name: Log in to GHCR
         run: |

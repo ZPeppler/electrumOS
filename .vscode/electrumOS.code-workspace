@@ -7,7 +7,8 @@
 	"settings": {	
   	"ansible.python.interpreterPath": "${workspaceFolder}/.venv/bin/python",
 		"files.associations": {
-			"*.yml" : "ansible"
+			"*.yml" : "ansible",
+			"*.container" : "Dockerfile"
 		}
 	}
 }
